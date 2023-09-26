@@ -5,6 +5,7 @@ using CsvHelper;
 using System.Globalization;
 using System.Text;
 
+Console.WriteLine("Начало работы парсера");
 //AngleSharp
 var config = Configuration.Default.WithDefaultLoader();
 var context = BrowsingContext.New(config);
@@ -23,8 +24,11 @@ var countPages = int.Parse(document.QuerySelectorAll(".pagination a").Skip(3).Fi
 ParserLinks parser = new ParserLinks();
 for (int i = 1; i <= countPages; i++)
 {
+    Console.WriteLine("Получам продукты со страницы #" + i);
     //Получаем ископые результаты с сайта
     var products = await parser.Parse(i);
     //Записываем результаты в файл
     csvWriter.WriteRecords(products);
+    Console.WriteLine("Результаты записаны в файл");
 }
+Console.WriteLine("Парсер завершил работу");

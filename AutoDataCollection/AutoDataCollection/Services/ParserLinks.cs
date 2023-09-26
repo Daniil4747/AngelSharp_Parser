@@ -35,10 +35,13 @@ namespace AutoDataCollection.Services
                 //Задержка потока 
                 Thread.Sleep(_parserSetting.DelayRequest);
                 //Получаем данные о продукте
+                Console.WriteLine("Получаем информацию о продукте");
                 var product = await ParseProduct(productItem);
                 //Добавляем в список продуктов
                 products.Add(product);
+                Console.WriteLine("Добавили в список продуктов");
             }
+            Console.WriteLine("Получены все продукты с текущей страницы");
             return products;
         }
 
@@ -104,7 +107,7 @@ namespace AutoDataCollection.Services
                 product.Availability = "Нет в наличии";
             }
             context.Dispose();
-
+            Console.WriteLine("Информация о продукте получена");
             return product;
         }
 
