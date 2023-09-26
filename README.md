@@ -21,11 +21,13 @@
 ### Технологии:
 <details>
 <summary>Было использовано</summary>
+  
 | Rank | Elements      |
 |-----:|--------------:|
 |     1| C#            |
 |     2| Visual Studio |
 |     3| AngelSharp    |
 |     4| File.csv      |
+
 </details>
 
