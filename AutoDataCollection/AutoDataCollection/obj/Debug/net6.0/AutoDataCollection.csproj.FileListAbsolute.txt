@@ -20,3 +20,25 @@ C:\Users\berez\source\repos\AutoDataCollection\AutoDataCollection\bin\Debug\net6
 C:\Users\berez\source\repos\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\berez\source\repos\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\berez\source\repos\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\AutoDataCollection.exe
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\AutoDataCollection.deps.json
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\AutoDataCollection.runtimeconfig.json
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\AutoDataCollection.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\AutoDataCollection.pdb
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\AngleSharp.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\RestSharp.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.csproj.AssemblyReference.cache
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.AssemblyInfoInputs.cache
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.AssemblyInfo.cs
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.csproj.CoreCompileInputs.cache
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.csproj.CopyComplete
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\refint\AutoDataCollection.dll
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.pdb
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\AutoDataCollection.genruntimeconfig.cache
+C:\Users\berez\OneDrive\Рабочий стол\AngelSharp_Parser\AutoDataCollection\AutoDataCollection\obj\Debug\net6.0\ref\AutoDataCollection.dll

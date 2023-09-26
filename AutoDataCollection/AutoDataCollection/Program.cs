@@ -28,7 +28,3 @@ for (int i = 1; i <= countPages; i++)
     //Записываем результаты в файл
     csvWriter.WriteRecords(products);
 }
-
-
-
-
