@@ -50,16 +50,19 @@ namespace AutoDataCollection.Services
             var config = Configuration.Default.WithDefaultLoader();
             var context = BrowsingContext.New(config);
             var document = await context.OpenAsync(_parserSetting.BaseUrl + url);
+
             var product = new Product();
 
             var name = document.QuerySelector(".content-title").TextContent;
+            //Название продукта
             product.Name = name;
-
+            //Ссылка на продукт
             product.ProductUrl = _parserSetting.BaseUrl + url;
 
             var regionName = document.QuerySelector("a.nav-link span").TextContent.Trim();
+            //Регион
             product.RegionName = regionName;
-
+            //Список ссылок изображений 
             List<string> imageUrls = new List<string>();
 
             var imageUrlItems = document.QuerySelectorAll(".swiper-slide");
@@ -77,6 +80,7 @@ namespace AutoDataCollection.Services
                 product.ImageUrl += imageUrl;
             }
 
+            //Навигационный путь(Хлебные крошки) 
             StringBuilder sb = new StringBuilder();
             var naviChainItems = document.QuerySelectorAll(".breadcrumb-item");
             foreach (var naviChainItem in naviChainItems)
@@ -85,19 +89,20 @@ namespace AutoDataCollection.Services
                 sb.Append(NavigationChain + "/");
             }
             product.NavigationChain = sb.ToString();
-
+            //Проверка на наличие продукта
             if (document.QuerySelector(".not-in-stock-text") == null)
             {
+                //Проверка на старую цену
                 if (document.QuerySelector(".old-price") != null)
                 {
-                    var oldPrice = int.Parse(document.QuerySelector(".old-price").TextContent.Replace("₽", "").Replace(" ", ""));
+                    var oldPrice = decimal.Parse(document.QuerySelector(".old-price").TextContent.Replace("₽", "").Replace(" ", ""));
                     product.OldPrice = oldPrice;
-                    var price = int.Parse(document.QuerySelectorAll(".buy-block div").Skip(6).Take(1).FirstOrDefault().TextContent.Replace("₽", "").Replace(" ", ""));
+                    var price = decimal.Parse(document.QuerySelectorAll(".buy-block div").Skip(6).Take(1).FirstOrDefault().TextContent.Replace("₽", "").Replace(" ", ""));
                     product.Price = price;
                 }
                 else
                 {
-                    var currprice = int.Parse(document.QuerySelectorAll(".buy-block div").Skip(5).Take(1).FirstOrDefault().TextContent.Replace("₽", "").Replace(" ", ""));
+                    var currprice = decimal.Parse(document.QuerySelectorAll(".buy-block div").Skip(5).Take(1).FirstOrDefault().TextContent.Replace("₽", "").Replace(" ", ""));
                     product.Price = currprice;
                 }
                 product.Availability = "В наличии";
@@ -106,6 +111,7 @@ namespace AutoDataCollection.Services
             {
                 product.Availability = "Нет в наличии";
             }
+            //Освобождаем память
             context.Dispose();
             Console.WriteLine("Информация о продукте получена");
             return product;

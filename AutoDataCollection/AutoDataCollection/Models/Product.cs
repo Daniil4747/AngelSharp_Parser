@@ -2,7 +2,6 @@
 {
     public class Product
     {
-
         public string RegionName { get; set; } //Название региона
 
         public string NavigationChain { get; set; } //Хлебные крошки

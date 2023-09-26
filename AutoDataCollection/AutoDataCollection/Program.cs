@@ -3,6 +3,7 @@ using AutoDataCollection.Models;
 using AutoDataCollection.Services;
 using CsvHelper;
 using System.Globalization;
+using System.Reflection;
 using System.Text;
 
 Console.WriteLine("Начало работы парсера");
